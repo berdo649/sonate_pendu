@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Pendu - Partie en cours</title>
+</head>
+<body>
+    <h1>Bonjour {{ nom }} !</h1>
+    
+    <p><strong>Mot à deviner :</strong> {{ mot_indice }}</p>
+    <p><strong>Vies restantes :</strong> {{ vies }}</p>
+
+    <p><em>(Mot secret pour tester : {{ mot_secret }})</em></p>
+
+    <h2>Choisis une lettre :</h2>
+    <form action="/tentative" method="post">
+        <button type="submit" name="lettre" value="a">A</button>
+        <button type="submit" name="lettre" value="b">B</button>
+        <button type="submit" name="lettre" value="c">C</button>
+        <button type="submit" name="lettre" value="d">D</button>
+        <button type="submit" name="lettre" value="e">E</button>
+        <button type="submit" name="lettre" value="f">F</button>
+        <button type="submit" name="lettre" value="g">G</button>
+        <button type="submit" name="lettre" value="h">H</button>
+        <button type="submit" name="lettre" value="i">I</button>
+        <button type="submit" name="lettre" value="j">J</button>
+        <button type="submit" name="lettre" value="k">K</button>
+        <button type="submit" name="lettre" value="l">L</button>
+        <button type="submit" name="lettre" value="m">M</button>
+        <button type="submit" name="lettre" value="n">N</button>
+        <button type="submit" name="lettre" value="o">O</button>
+        <button type="submit" name="lettre" value="p">P</button>
+        <button type="submit" name="lettre" value="q">Q</button>
+        <button type="submit" name="lettre" value="r">R</button>
+        <button type="submit" name="lettre" value="s">S</button>
+        <button type="submit" name="lettre" value="t">T</button>
+        <button type="submit" name="lettre" value="u">U</button>
+        <button type="submit" name="lettre" value="v">V</button>
+        <button type="submit" name="lettre" value="w">W</button>
+        <button type="submit" name="lettre" value="x">X</button>
+        <button type="submit" name="lettre" value="y">Y</button>
+        <button type="submit" name="lettre" value="z">Z</button>
+    </form>
+</body>
+</html>
