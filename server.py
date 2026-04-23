@@ -74,6 +74,12 @@ def tentative():
 
     mot_indice = construire_mot_indice(mot, lettres_trouvees)
 
+    if "_" not in mot_indice:
+        return render_template("fin.html", nom=session["nom"], mot=mot, gagne=True)
+
+    if vies <= 0:
+        return render_template("fin.html", nom=session["nom"], mot=mot, gagne=False)
+
     return render_template(
         "jeu.html",
         nom=session["nom"],
